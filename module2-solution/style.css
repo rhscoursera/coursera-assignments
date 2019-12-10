@@ -1,0 +1,94 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 175%;
+}
+
+/* Menu Header Styles */
+.outerMenuSection {
+  border: solid;
+  border-color: white;
+  border-width: 5px;
+}
+
+.innerMenuSection {
+  background-color: lightgray;
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.menuHeader {
+  float: right;
+  margin-top: 0px;
+  width: 33%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 125%;
+  border-color: black;
+  border-width: 1px;
+}
+
+.menuText {
+  clear: right;
+  text-align: left;
+  margin: 10%;
+  padding-top: 2%;
+
+}
+
+#chickenHeader {
+  margin: 0px;
+  background-color: pink;
+}
+
+#beefHeader {
+  margin: 0px;
+  background-color: red;
+}
+
+#sushiHeader {
+  margin: 0px;
+  background-color: beige;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+
+  .col-md-12 {
+    float: left;
+    width: 100%;
+  } 
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px){
+  .col-md-12 {
+    float: left;
+    width: 100%;
+  }
+}
